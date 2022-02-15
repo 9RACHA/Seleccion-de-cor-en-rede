@@ -20,15 +20,18 @@ namespace HelloWorld
             Color.white,
             Color.magenta,
             Color.gray,
+            Color.clear,
+
             new Color(255F, 0F, 255F),
             new Color(0F, 255F, 255F),
             new Color(255F, 255F, 0F),
             new Color(128F, 0F, 128F),
             new Color(128F, 0F, 0F),
             new Color(128F, 128, 0F),
-            new Color(0F, 0F, 0F),
             new Color(128F, 255F, 0F),
-            new Color(0F, 255F, 128F)
+            new Color(0F, 255F, 128F),
+            new Color(255F, 128F, 0),
+            new Color(0F, 0F, 0F),
 
         };
 
