@@ -36,7 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\MyApplication.cs" />
+     <Compile Include="Assets\Scripts\NetworkCommandLine.cs" />
+     <Compile Include="Assets\Scripts\HelloWorldPlayer.cs" />
+     <Compile Include="Assets\Scripts\HelloWorldManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -258,6 +261,27 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.collections@1.1.0/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -604,6 +628,9 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Multiplayer.NetworkSolutionInterface">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Multiplayer.NetworkSolutionInterface.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -613,14 +640,29 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.Profiling.Core">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Profiling.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.NetworkProfiler.Runtime">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Multiplayer.NetworkProfiler.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Multiplayer.NetworkProfiler.Editor">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Multiplayer.NetworkProfiler.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.MetricTypes">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Multiplayer.MetricTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Netcode.Editor">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Netcode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -631,8 +673,35 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Netcode.Runtime">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Netcode.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.NetStatsReporting">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Multiplayer.NetStatsReporting.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Netcode.Components">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Netcode.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.NetStats">
+        <HintPath>D:/Unity/P2.2 Selección de cor en rede/Library/ScriptAssemblies/Unity.Multiplayer.NetStats.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
